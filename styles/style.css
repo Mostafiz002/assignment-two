@@ -22,7 +22,7 @@ body{
 }
 
 main{
-  max-width: 1440px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@ header{
 }
 
 .navbar, .banner{
-  max-width: 1440px;
+  max-width: 1060px;
   margin: 0 auto;
   
 }
@@ -154,6 +154,8 @@ header{
 
 .banner-img-widget-cont{
   max-width: 50%;
+  position: relative;
+  text-align: center;
 }
 
 .banner-img-cont{
@@ -169,7 +171,7 @@ header{
 
 .banner-description-font{
   font-size: 14px;
-  width: 63%;
+  width: 85%;
 }
 
 .banner-title{
@@ -180,7 +182,7 @@ header{
   line-height: 120%;
   letter-spacing: 0px;
   text-align: left;
-  width: 70%;
+  width: 100%;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -202,6 +204,9 @@ header{
 }
 
 .widget-1{
+  position: absolute;
+  bottom: 48px;
+  left: -145px;
   max-width: 260px;
   box-sizing: border-box;
   display: flex;
@@ -213,7 +218,6 @@ header{
   background: rgba(48, 48, 48, 0.54);
   padding: 20px;
   gap: 15px;
-  margin: -166px 0 0 -156px;
   z-index: 99;
 }
 
@@ -233,7 +237,7 @@ header{
   width: 60px;
   position:absolute ;
   top: 25%;
-  left: 14%;
+  left: 12%;
   margin: 0px;
 }
 
@@ -270,7 +274,9 @@ header{
 }
 
 .widget-2{
-  max-width: 150px;
+  position: absolute;
+  bottom: 360px;
+  right: -60px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -279,7 +285,6 @@ header{
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  margin: -466px 0 400px 200px;
   z-index: 99;
 }
 
@@ -307,12 +312,19 @@ header{
 
 /* change your habbit section style */
 
+.habbit-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .habbit-title{
   text-align: center;
   margin: 100px 0 14px 0;
 }
 
 .habbit-description{
+  width: 60%;
   text-align: center;
   margin-bottom: 58px;
 }
@@ -354,7 +366,9 @@ header{
 /* run an extra mile style */
 
 .one-card-img{
-  width: 30%;
+  object-fit: cover;
+  object-position: top;
+  width: 40%;
   border-radius: 18px;
 }
 
@@ -366,7 +380,7 @@ header{
 }
 
 .run{
-  max-width: 30%;
+  max-width: 40%;
 }
 
 .one-card-title{
@@ -380,18 +394,136 @@ header{
 
 /* meet trainer style */
 
-
-.meet-card{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.meet-team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-title{
   text-align: center;
+  margin: 88px 0 14px 0;
 }
 
 .team-description{
   text-align: center;
+  margin-bottom: 58px;
+  justify-items: center;
+  width: 45%;
+}
+
+.meet-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.trainer-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.trainer{
+  position: relative;
+  text-align: center;
+}
+
+.trainer-title{
+  position: absolute;
+  bottom: 36px;
+  left: 19px;
+  color: #ffffff;
+  line-height: 120%;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.trainer-description{
+  position: absolute;
+  bottom: 16px;
+  left: 19px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 120%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* footer style  */
+
+footer{
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 88px;
+}
+
+.footer{
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 66px;
+}
+
+.footer-main{
+  display: flex;
+  padding: 0;
+}
+
+.footer-content{
+  width: 50%;
+}
+
+.footer-logo{
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.footer-description{
+  width: 75%;
+}
+
+.page-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0 0 39px 0;
+}
+
+.services{
+  display: flex;
+  gap: 20px;
+}
+
+.services-title{
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.438rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
 }
 
 /* responsive design for small devices */
