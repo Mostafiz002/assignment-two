@@ -17,6 +17,10 @@
 
 /*shared style*/
 
+.display-none{
+  display: none;
+}
+
 body{
   background: rgb(0, 0, 0);
 }
@@ -136,6 +140,10 @@ header{
   justify-content: center;
   padding: 0px 25px 0px 10px;
   margin: 0px 10px;
+}
+
+.mobile-bar{
+  display: none;
 }
 
 
@@ -468,11 +476,14 @@ footer{
   max-width: 1060px;
   margin: 0 auto;
   padding-top: 66px;
+  padding-bottom: 35px;
 }
 
 .footer-main{
   display: flex;
+  justify-content: space-between;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .footer-content{
@@ -497,6 +508,7 @@ footer{
 .page-links{
   display: flex;
   justify-content: space-between;
+  width: 50%;
 }
 
 .footer-title{
@@ -512,6 +524,7 @@ footer{
 
 .services{
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -526,8 +539,189 @@ footer{
   margin: 0;
 }
 
+.footer >hr{
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 79px 0 36px 0;
+}
+
+.rights{
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin: 0;
+}
+
 /* responsive design for small devices */
 
 @media screen and (max-width: 576px) {
-  
+
+  /* responsive header */
+
+  .menu{
+    display: none;
+  }
+  .mobile-bar{
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    font-size: 1.65rem;
+  }
+
+  .navbar .banner{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .banner{
+    flex-direction: column;
+  }
+
+  .banner-title{
+    font-size: 2.25rem;
+    width: 70%;
+  }
+
+  .banner-description-font{
+    width: 73%;
+  }
+
+  .banner-content{
+    align-self: flex-start;
+    max-width: 100%;
+  }
+
+  .banner-btn{
+    gap: 14px;
+    justify-content: space-between;
+  }
+
+  .ballet-font{
+    font-size: 3.25rem;
+  }
+
+  .banner-img-widget-cont{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+  .btn-secondary{
+    text-align: center;
+  }
+
+  .widget-1{
+    bottom: 290px;
+    left: 20px;
+    width: 210px;
+  }
+  .circle{
+    padding: 30.24px;
+  }
+  .widget-1-img{
+    width: 40px;
+    top: 29%;
+    left: 16%;
+  }
+
+  .svg-number-1{
+    font-size: 1.134rem;
+  }
+
+  .svg-title-1{
+    font-size: 12.1px;
+  }
+
+  .widget-2{
+    bottom: 508px;
+    right: 20px;
+  }
+
+  .svg-number-2{
+    font-size: 30.24px;
+  }
+
+  .svg-title-2{
+    font-size: 9.83px;
+  }
+
+  /* change your habbit section */
+
+  .habbit-title{
+    margin-top: 0px;
+    font-size: 32px;
+  }
+
+  .habbit-description{
+    width: 80%;
+  }
+
+  .mask-container{
+    flex-direction: column;
+  }
+
+  .mask-description{
+    width: 60%;
+  }
+
+  /* one card section */
+
+  .one-card{
+    flex-direction: column;
+    padding: 30px 33px 30px 33px;
+  }
+
+  .run{
+    max-width: 100%;
+  }
+
+  .one-card-img{
+    width: 100%;
+  }
+
+  .one-card-description{
+    width: 80%;
+  }
+
+  .one-card-btn{
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  /* meet trainer section responsive */
+
+  .team-description{
+    width: 75%;
+  }
+
+  .meet-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer section responsive */
+
+  .footer-content{
+    width: 100%;
+  }
+
+  .footer-main{
+    flex-direction: column;
+  }
+
+  .page-links{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2rem;
+    margin: 30px 0 39px 0;
+  }
+
 }
