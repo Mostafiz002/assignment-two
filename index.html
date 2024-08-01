@@ -33,7 +33,7 @@
                 <p class="description banner-description-font">A huge selection of health and fitness content, healthy recipes 
                     and transformation stories to help you get fit and stay fit!</p>
                 <div class="banner-btn">
-                    <button onclick="window.location.href='https://web.programming-hero.com/home'; "class="btn-primary">Join Club Now!</button>
+                    <button onclick="window.location.href='https://web.programming-hero.com/home'; " class="btn-primary">Join Club Now!</button>
                     <button onclick="window.location.href='https://web.programming-hero.com/home';" class="btn-secondary">Download App</button>
                 </div>
             </div>
@@ -144,9 +144,25 @@
                         <h4 class="info-title">Calculate your BMI</h4>
                         <p class="info-description description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
                         <form action="">
-    
+                            <div class="parent-hw">
+                                <input type="number" placeholder="Height/cm" id="height" min="0" required>
+                                <input type="number" placeholder="Weight/kg" id="weight" min="0" required>
+                            </div>
+                            <div class="parent-ao">
+                                <input type="number" placeholder="Age" id="age" min="0">
+                                <select name="" id="gender">
+                                    <option hidden value="">Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <select name="" id="activity">
+                                <option hidden value="">Select an activity factor</option>
+                                <option value="">Running</option>
+                                <option value="">Walking</option>
+                            </select><br>
+                            <input type="submit" class="btn-primary bmi-btn" value="Calculate">
                         </form>
-                        <button class="btn-primary">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -188,7 +204,7 @@
                 </div>
             </div>
           </section>
-          <!-- our satisfied clients -->
+          <!-- testimonial our satisfied clients -->
           <section class="main">
             <div class="clients-container">
                 <h3 class="clients-title title">Our Satisfied Clients</h3>
