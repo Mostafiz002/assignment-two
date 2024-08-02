@@ -809,6 +809,17 @@ footer{
     justify-content: space-between;
   }
 
+  .banner-btn-1{
+    width: 45%;
+    padding: 0 20px;
+  }
+
+  .btn-secondary{
+    width: 45%;
+    text-align: center;
+    padding: 16px 20px;
+  }
+
   .ballet-font{
     font-size: 3.25rem;
   }
@@ -818,10 +829,6 @@ footer{
     display: flex;
     justify-content: center;
     }
-
-  .btn-secondary{
-    text-align: center;
-  }
 
   .widget-1{
     bottom: 290px;
@@ -921,7 +928,7 @@ footer{
   }
 
   .parent-chart{
-    width: 100%;
+    width: calc( 100% - 40px );
     padding-left: 20px;
     padding-right: 20px;
   }
