@@ -375,8 +375,8 @@ header{
 /* run an extra mile style */
 
 .one-card-img{
-  object-fit: cover;
-  object-position: top;
+  object-fit: none;
+  object-position: 67% 30%;
   width: 40%;
   border-radius: 18px;
 }
